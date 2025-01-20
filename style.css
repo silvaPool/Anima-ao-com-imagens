@@ -1,0 +1,58 @@
+* {
+    padding: 35px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background: url("./images/um.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-animation: squareToCircle 2s 2s infinite alternate;
+}
+
+/* top-left | top-right | bottom-right | bottom-left */
+
+@-webkit-keyframes squareToCircle {
+    0% {
+        border-radius: 0 0 0 0;
+        background: url("./images/um.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 50% 0 0 0;
+         background: url("./images/dois.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(45deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: url("./images/tres.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(90deg);
+    }
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background: url("./images/quatro.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(135deg);
+    }
+    100% {
+        border-radius: 50% 50% 50% 50%;
+        background: url("./images/cinco.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(180deg);
+    }
+}
